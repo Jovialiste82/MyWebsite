@@ -7,10 +7,14 @@ const characters = [
 
 const matrixFiller = [
   ...Array(
-    Math.floor((window.screen.height * window.screen.width) / 400 + 100)
+    Math.ceil(
+      (window.screen.height * window.screen.width) / 400 +
+        (Math.max(window.screen.height, window.screen.width) / 20) * 3
+    )
   ).keys(),
 ];
 console.log(matrixFiller.length);
+console.log((Math.max(window.screen.height, window.screen.width) / 20) * 3);
 
 const createCharacterSpan = (character) => {
   const span = document.createElement("span");
