@@ -156,10 +156,9 @@
 }
 
 .modal-contact-content {
-  height: 50%;
+  height: 60%;
 }
 
-.modal-contact-content li,
 .modal-contact-content li a,
 .modal-contact-content li span {
   color: #ccc;
@@ -177,6 +176,7 @@
 }
 
 .modal-about-content a {
-  color: rgb(253, 16, 21);
+  font-weight: bold;
   text-decoration: none;
+  color: #ccc;
 }
