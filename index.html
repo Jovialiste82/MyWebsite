@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/mediaq.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <script src="js/matrix.js" defer></script>
+    <script src="js/winbox.bundle.js" defer></script>
+    <script src="js/winbox-main.js" defer></script>
+    <title>Philippe Charpentier</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HF54JHE8WX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HF54JHE8WX");
+    </script>
+  </head>
+  <body>
+    <main>
+      <!-- Hero Section with matrix background -->
+      <section class="hero-section">
+        <div class="matrix-bg"></div>
+        <div class="matrix-overlay">
+          <div class="hero-text">
+            <h1>Philippe Charpentier-Tity</h1>
+            <h3>Fullstack Web Developer</h3>
+            <nav>
+              <ul>
+                <li id="about">/about</li>
+                <li id="contact">/contact</li>
+                <li id="github">
+                  <a href="https://github.com/Jovialiste82" target="_blank"
+                    >/github</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="hidden">
+          <div id="about-content">
+            <h2>about-me<span class="cursor">|</span></h2>
+            <p>
+              My name is Philippe Charpentier and in late 2019, I completed a
+              9-week web development bootcamp at
+              <a href="https://www.lewagon.com/montreal" target="_blank"
+                >Le Wagon Montréal</a
+              >. Lately I specialized in the MERN stack, that is React.js,
+              Node.js, Express.js, and MongoDB. I can also work in projects
+              involving Ruby, Rails and PostgreSql.
+            </p>
+          </div>
+
+          <div id="contact-content">
+            <h2>contact-me<span class="cursor">|</span></h2>
+            <br />
+            <ul>
+              <li>Phone: +596.696.324.714</li>
+              <li>Email: contact@philippecharpentier.dev</li>
+              <li>
+                LinkedIn:
+                <a
+                  href="https://www.linkedin.com/in/philippe-charpentier/"
+                  target="_blank"
+                  >philippe-charpentier</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-about-bg">
+          <div class="modal-about-content">
+            <h2>about-me<span class="cursor">|</span></h2>
+            <p>
+              My name is Philippe Charpentier and in late 2019, I completed a
+              9-week web development bootcamp at Le
+              <a href="https://www.lewagon.com/montreal" target="_blank"
+                >Wagon</a
+              >
+              Montréal. Lately I specialized in the MERN stack, that is
+              React.js, Node.js, Express.js, and MongoDB. I can also work in
+              projects involving Ruby, Rails and PostgreSql.
+            </p>
+            <span class="modal-about-close">X</span>
+          </div>
+        </div>
+
+        <div class="modal-contact-bg">
+          <div class="modal-contact-content">
+            <h2>contact-me<span class="cursor">|</span></h2>
+            <br />
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/philippe-charpentier/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>+596.696.324.714</li>
+              <li><span>contact@philippecharpentier.dev</span></li>
+            </ul>
+            <span class="modal-contact-close">X</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

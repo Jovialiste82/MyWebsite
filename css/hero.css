@@ -1,0 +1,194 @@
+.hero-section {
+  height: 100vh;
+  background-color: rgb(31, 29, 29);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-section ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-section li {
+  cursor: pointer;
+  margin: 2rem;
+}
+
+#github a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.matrix-bg {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+
+.matrix-img {
+  background-image: url("../img/mxbg2.png");
+  position: relative;
+  z-index: 50;
+}
+
+.matrix-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+.hero-text h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.matrix-style {
+  color: green;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  padding: 0.5rem;
+  font-size: large;
+  font-weight: 400;
+  animation: animate 2s ease-in-out;
+}
+
+.matrix-neon {
+  text-shadow: 0 9px 1.5px rgb(47, 240, 47);
+  filter: blur(0.2px);
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+/* #################
+##### WinBox #######
+################# */
+
+.hidden {
+  display: none;
+}
+
+#about-content,
+#contact-content {
+  background: #111;
+  padding: 20px;
+  min-height: 100%;
+}
+
+#about-content .cursor,
+#contact-content .cursor,
+.modal-about-content .cursor,
+.modal-contact-content .cursor {
+  color: var(--text-color);
+  font-weight: 700;
+  animation: 1s blink step-end infinite;
+}
+
+#contact-content ul {
+  margin-left: 1rem;
+}
+
+#contact-content a,
+#about-content a {
+  color: bisque;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: var(--text-color);
+  }
+}
+
+.modal-about-bg,
+.modal-contact-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.modal-bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-about-content,
+.modal-contact-content {
+  background: rgba(0, 0, 0, 0.95);
+  border: 1px solid var(--text-color);
+  padding: 1rem;
+  height: 80%;
+  width: 80%;
+  position: relative;
+  overflow: scroll;
+}
+
+.modal-contact-content {
+  height: 50%;
+}
+.modal-contact-content li span {
+  font-size: 0.7rem;
+}
+
+.modal-about-close,
+.modal-contact-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  font-size: larger;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.modal-contact-content li {
+  color: rgb(42, 78, 122);
+}
+
+.modal-contact-content li a {
+  color: rgb(40, 103, 178);
+  text-decoration: none;
+}
+
+.modal-about-content a {
+  color: rgb(253, 16, 21);
+  text-decoration: none;
+}

@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
+
+:root {
+  --text-color: #00aa00;
+}
+
+body {
+  font-family: "Roboto Mono", Verdana, sans-serif;
+  background-color: #333;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h2 {
+  color: var(--text-color);
+}
