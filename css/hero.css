@@ -36,12 +36,6 @@
   background-color: transparent;
 }
 
-.matrix-img {
-  background-image: url("../img/mxbg2.png");
-  position: relative;
-  z-index: 50;
-}
-
 .matrix-overlay {
   position: absolute;
   top: 0;
@@ -164,8 +158,11 @@
 .modal-contact-content {
   height: 50%;
 }
+
+.modal-contact-content li,
+.modal-contact-content li a,
 .modal-contact-content li span {
-  font-size: 0.7rem;
+  color: #ccc;
 }
 
 .modal-about-close,
@@ -177,15 +174,6 @@
   font-size: larger;
   color: var(--text-color);
   cursor: pointer;
-}
-
-.modal-contact-content li {
-  color: rgb(42, 78, 122);
-}
-
-.modal-contact-content li a {
-  color: rgb(40, 103, 178);
-  text-decoration: none;
 }
 
 .modal-about-content a {
