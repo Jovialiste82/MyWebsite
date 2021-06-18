@@ -12,7 +12,7 @@ const matrixFiller = [
 ];
 console.log(matrixFiller.length);
 
-const createCharacterDiv = (character) => {
+const createCharacterSpan = (character) => {
   const span = document.createElement("span");
   span.innerText = `${character}`;
   span.setAttribute("class", "matrix-style");
@@ -53,7 +53,7 @@ const changeCharacters = () => {
 
 const fillMatrix = () => {
   matrixFiller.forEach((space) => {
-    matrixBg.appendChild(createCharacterDiv(getRandomCharacter()));
+    matrixBg.appendChild(createCharacterSpan(getRandomCharacter()));
   });
 
   setInterval(changeCharacters, 100);
