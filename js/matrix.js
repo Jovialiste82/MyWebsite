@@ -13,12 +13,10 @@ const matrixFiller = [
     )
   ).keys(),
 ];
-console.log(matrixFiller.length);
-console.log((Math.max(window.screen.height, window.screen.width) / 20) * 3);
 
 const createCharacterSpan = (character) => {
   const span = document.createElement("span");
-  span.innerText = `${character}`;
+  span.innerText = character;
   span.setAttribute("class", "matrix-style");
 
   if (5 === Math.floor(Math.random() * 10)) {

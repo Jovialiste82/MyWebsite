@@ -6,10 +6,6 @@
   margin: 0;
 }
 
-body {
-  position: relative;
-}
-
 :root {
   --text-color: #00aa00;
 }
@@ -20,6 +16,7 @@ body {
   color: #ccc;
   font-size: 18px;
   line-height: 1.6;
+  position: relative;
 }
 
 h2 {
