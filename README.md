@@ -1,6 +1,6 @@
 # Welcome to my Personal Website
 
-A matrix-themed personal page built using only pure HTML, CSS and JS. No CSS framework. No JS framework. Other sections will be added to this project soon. Stay tuned!
+A matrix-themed personal page built using only pure HTML, CSS and JS. No CSS framework. No JS framework.
 
 ## Built With
 
